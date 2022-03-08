@@ -15,10 +15,10 @@ function Nav() {
         <div className="navContent">
           <ul>
             <li> <Link to={"/new"}>NEW</Link></li>
-            <li> <a href="/shoes">SHOE</a></li>
+            <li> <Link to={"/shoes"}>SHOE</Link></li>
             <li> <a href="">SNEAKERS</a></li>
             <li> <a href="">DESIGNERS</a></li>
-            <li> <a href="/">SALE</a></li>
+            <li> <Link to={"/"}>SHOE</Link></li>
           </ul>
         </div>
         <div className="nav-icons">
