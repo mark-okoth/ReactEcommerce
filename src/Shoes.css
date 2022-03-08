@@ -1,0 +1,41 @@
+.container-shoes{
+    display: flex;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container{
+    max-width: 300px;
+    border: 1px solid black;
+}
+.container img{
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+    background: center;
+
+}
+.card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card p{
+    text-transform: capitalize;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background: black;
+    outline: none;
+    padding: 10px;
+    color: white;
+    border: none;
+}

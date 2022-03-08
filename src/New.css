@@ -1,0 +1,54 @@
+.main{
+    display: flex;
+    /* border: 1px solid gray; */
+    width: 100vw;
+    flex: 3;
+}
+.item{
+    border: 1px solid rgb(236, 230, 230);
+}
+.left-column{ 
+    width: 25%;
+    
+}
+.middle-column{
+    width: 50%;
+}
+.right-column{
+    width: 25%; 
+}
+select{
+    width: 22vmax;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.card-Category{
+    padding: 10px;
+    border-bottom: 1px lightgrey solid;
+    margin: 5px 0;
+}
+
+form{
+    margin-top: 1px;
+}
+.radiobtn{
+    border-bottom: 1px lightgrey solid;
+    padding: 20px;
+}
+.progress-Bar
+{
+padding: 20px;
+}
+.size{
+    display: flex;
+    gap: 3px;
+    padding: 2px;
+    width: 24%;
+    flex-wrap: wrap;
+}
+.size button{
+ width: 35px;
+ height: 35px;
+}

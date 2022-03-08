@@ -1,0 +1,43 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.navContent ul {
+    display:  flex;
+    gap: 30px;
+    color: white;
+}
+.navContent ul li{
+    list-style: none;
+    
+}
+
+.navContent ul li a{
+ text-decoration: none;
+ color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo a {
+text-decoration:  none;
+color: white;
+border: 1px solid white;
+padding: 10px;
+}
+.nav-icons ul li{
+    list-style: none;
+}
+.nav-icons ul{
+    display: flex;
+    gap: 20px;
+}
+.nav-icons span{
+    color: #fff;
+}
