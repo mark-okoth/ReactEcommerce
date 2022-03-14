@@ -7,7 +7,7 @@
     margin-top: 10px;
 }
 .container{
-    max-width: 300px;
+    min-width: 300px;
     border: 1px solid black;
 }
 .container img{
@@ -32,10 +32,25 @@
     align-items: center;
     justify-content: center;
 }
-button{
+.container button{
     background: black;
     outline: none;
     padding: 10px;
     color: white;
     border: none;
+}
+.container button a{
+    text-decoration: none;
+    color: white;
+}
+.price{
+    font-weight: bolder;
+}
+
+.spinner{
+display: flex;
+width: 100vw;
+height: 70vh;
+justify-content: center;
+align-items: center;
 }

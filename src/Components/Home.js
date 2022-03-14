@@ -1,10 +1,8 @@
 import React from "react";
 import '../Home.css'
 
-function Home() {
-  function btnclick(){
-    console.log('clicked')
-  }
+const Home = ()=> {
+
   return (
     <div className="Home">
       <div className="banner"> 
