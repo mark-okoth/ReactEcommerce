@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Shoes.css";
 import { Link } from "react-router-dom";
-import BarLoader from "react-spinners/BarLoader";
+import BarLoader from "react-spinners/BeatLoader";
 
 function Shoes() {
   const [products, setProducts] = useState({ results: null, loading: true });
@@ -17,7 +17,8 @@ function Shoes() {
     <div className="container-shoes">
       {products.loading ? (
         <div className="spinner">
-         <BarLoader height={4} width={200} color={'#FF0000'}/>
+          <p>Shopper loading....</p>
+         <BarLoader height={4} width={200} color={'#000000'}/>
         </div>
        
       ) : (

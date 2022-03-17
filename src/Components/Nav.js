@@ -1,12 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../Nav.css'
 import { BrowserRouter, Route,Routes , Link} from "react-router-dom";
 import Home from './Home'
 import Shoes from './Shoes'
 import New from './New'
 import Shoe from './Shoe'
+import Login from './LogIn'
+import Cart from './Cart'
 
 function Nav() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <BrowserRouter>
       <div className="navigation">
@@ -24,10 +27,10 @@ function Nav() {
         </div>
         <div className="nav-icons">
           <ul>
-          <li><a href="/"><span className="material-icons md-48">account_circle</span></a></li>
+          <li><a href="/login"><span className="material-icons md-48">account_circle</span></a></li>
           <li><a href="/"><span className="material-icons md-48">search</span></a></li>
-          <li><a href="/"><span className="material-icons md-48">location_on</span></a></li>
-          <li><a href="/"><span className="material-icons md-48">shopping_cart</span></a></li>
+          <li onClick={() => setIsOpen(!isOpen)}><a href="/"><span className="material-icons md-48">location_on</span></a></li>
+          <li><a href="/cart"><span className="material-icons md-48">shopping_cart</span></a></li>
           </ul>
         </div>
       </div>
@@ -36,6 +39,8 @@ function Nav() {
         <Route path='/shoes' element={<Shoes/>}></Route>
         <Route path='/new' element={<New/>}></Route>
         <Route path='/shoes/:id' element={<Shoe/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/Cart' element={<Cart/>}></Route>
         </Routes>
     </BrowserRouter>
   )

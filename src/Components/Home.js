@@ -1,5 +1,6 @@
 import React from "react";
 import '../Home.css'
+import {Button} from '@mui/material'
 
 const Home = ()=> {
 
@@ -13,7 +14,7 @@ const Home = ()=> {
       </div>
       <div className="promotion">
           <p className="discount">3O% OFF</p>
-           <button onClick={()=> console.log('clicked again')}>CODE: THIRTY</button>
+           <Button onClick={()=> console.log('clicked again')}>CODE: THIRTY</Button>
       </div>
     </div>
   );

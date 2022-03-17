@@ -49,6 +49,7 @@
 
 .spinner{
 display: flex;
+flex-direction: column;
 width: 100vw;
 height: 70vh;
 justify-content: center;
