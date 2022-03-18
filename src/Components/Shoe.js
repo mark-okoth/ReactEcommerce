@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext} from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import "../shoe.css";
 import {Rating} from '@mui/material';
+import CartContext from "./CartContext";
 
 function Shoe() {
+
   const [product, setProduct] = useState([]);
   const[rate, setRate] = useState(0)
   const [count, setcount] = useState(0);
